@@ -1,3 +1,216 @@
-h1 {
-  color: gold;
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+  padding: 10px;
+  min-width: 430px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.containers {
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  align-self: flex-end;
+  margin: 5px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+main {
+  margin-bottom: auto;
+}
+
+footer {
+  padding: 5px 15px;
+  width: 100%;
+  display: flex;
+  border: 2px solid black;
+}
+
+footer p {
+  margin: 0;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Header */
+header {
+  padding: 5px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  border: 2px solid black;
+}
+
+header p {
+  margin: 0;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+nav a:not(:first-child):not(:last-child) {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/* book lists */
+#books h1 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#book-list {
+  padding-inline-start: 0;
+  padding: 10px;
+  list-style: none;
+  border: 3px solid black;
+  width: 90%;
+  min-width: 360px;
+}
+
+.book-lists {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-items: center;
+  height: auto;
+}
+
+.remove-btn {
+  padding: 5px;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 5px 5px black;
+  float: right;
+}
+
+.uniqueId {
+  display: none;
+}
+
+/* add books */
+#error {
+  color: red;
+}
+
+#book-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#book-form h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 80%;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#book-form input {
+  width: 100%;
+  border: 2px solid black;
+  min-width: 200px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px;
+}
+
+#book-form button {
+  width: 40px;
+  align-self: flex-end;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 3px 3px black;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+/* Contact section */
+
+.contact-info p,
+.contact-info ul li {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Hiding add a new book and contact containers */
+#add-book {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+/* Focus starts here */
+.list:focus,
+.add:focus,
+.contact:focus {
+  color: #00f;
 }
